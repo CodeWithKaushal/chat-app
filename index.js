@@ -30,18 +30,18 @@ app.listen(8080, () => {
     console.log("app is listening");
 });
 
-app.get("/", (req, res) => {
+// app.get("/", (req, res) => {
 
-    res.send("working root");
+//     res.send("working root");
 
-});
+// });
 
 
 //===================================================
 // index route
 //===================================================
 
-app.get("/chats", async (req, res) => {
+app.get("/", async (req, res) => {
 
     let chats = await Chat.find();
     // console.log(chats);
